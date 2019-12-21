@@ -5,7 +5,7 @@ import { Menu } from 'semantic-ui-react'
 const Sidebar = () => {
   return (
     <>
-      <Menu text vertical id='sidebar'>
+      <Menu text vertical fixed='left' id='sidebar'>
         <Menu.Item header 
           className='sidebar-item'
           id='sidebar-header'
