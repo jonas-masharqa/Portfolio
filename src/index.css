@@ -33,3 +33,8 @@ code {
   font-size: 22px;
   padding-left: 20px;
 }
+
+.project-image {
+  object-fit: cover;
+  height: 200px;
+}

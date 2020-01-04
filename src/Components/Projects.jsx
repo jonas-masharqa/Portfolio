@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import ProjectCard from './ProjectCard'
+import { Grid, Container } from 'semantic-ui-react'
 
 class Projects extends Component {
   state = {
@@ -7,13 +9,11 @@ class Projects extends Component {
   }
 
   componentDidMount() {
-    debugger
-    axios.get('/data/projectsData.json')
-      .then(response => {
-        this.setState({
-          projects: response.data
-        })
+    axios.get('/data/projectsData.json').then(response => {
+      this.setState({
+        projects: response.data
       })
+    })
   }
 
   render() {
@@ -21,11 +21,10 @@ class Projects extends Component {
     let projectsList
 
     if (projects.length > 0) {
-      debugger
       projectsList = projects.map(project => {
         return (
           <div key={project.id}>
-            <h3 className="ui header">{project.name}</h3>
+            <ProjectCard project={project} />
           </div>
         )
       })
@@ -33,10 +32,10 @@ class Projects extends Component {
 
     return (
       <>
-        <div className="ui main container">
+        <Container>
           <h1 className="ui header">My Projects</h1>
-          {projectsList}
-        </div>
+          <div>{projectsList}</div>
+        </Container>
       </>
     )
   }
