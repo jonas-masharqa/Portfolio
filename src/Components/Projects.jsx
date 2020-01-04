@@ -1,8 +1,19 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 
 class Projects extends Component {
   state = {
     projects: []
+  }
+
+  componentDidMount() {
+    debugger
+    axios.get('/data/projectsData.json')
+      .then(response => {
+        this.setState({
+          projects: response.data
+        })
+      })
   }
 
   render() {
@@ -10,6 +21,7 @@ class Projects extends Component {
     let projectsList
 
     if (projects.length > 0) {
+      debugger
       projectsList = projects.map(project => {
         return (
           <div key={project.id}>
