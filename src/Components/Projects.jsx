@@ -33,8 +33,12 @@ class Projects extends Component {
     return (
       <>
         <Container>
-          <h1 className="ui header">My Projects</h1>
-          <div>{projectsList}</div>
+        <h1 id="project-header">My Projects</h1>
+          <Grid className='project-grid' centered container columns={3}>
+            <Grid.Row>
+              {projectsList}
+            </Grid.Row>
+          </Grid>
         </Container>
       </>
     )
