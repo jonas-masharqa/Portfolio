@@ -25,12 +25,6 @@ const Sidebar = () => {
           as={NavLink}
           to='/about'
         />
-        <Menu.Item 
-          className='sidebar-item'
-          name='Contact'
-          as={NavLink}
-          to='/contact'
-        />
       </Menu>
     </>
   )
