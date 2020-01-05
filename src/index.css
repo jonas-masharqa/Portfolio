@@ -45,7 +45,7 @@ body {
 #project-header {
   text-align: center;
   margin-bottom: 80px;
-  margin-top: 35px
+  margin-top: 35px;
 }
 
 /* About me */
@@ -57,14 +57,14 @@ body {
 }
 
 #about-container {
-  margin: 50px
+  margin: 50px;
 }
 
 #about-text {
   margin-right: 20px;
-  padding-top: 50px
+  padding-top: 50px;
 }
 
 .about-paragraph {
-  font-size: 17px
+  font-size: 17px;
 }
