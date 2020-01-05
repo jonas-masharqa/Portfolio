@@ -8,10 +8,10 @@ import { Route } from 'react-router-dom'
 const App = () => {
   return (
     <>
-      <Sidebar />
-      <Route exact path="/" component={LandingPage} />
-      <Route exact path="/projects" component={Projects} />
-      <Route exact path="/about" component={AboutMe} />
+      <Sidebar/>
+      <Route exact path="/" component={LandingPage}/>
+      <Route exact path="/projects" component={Projects}/>
+      <Route exact path="/about" component={AboutMe}/>
     </>
   )
 }
