@@ -5,7 +5,7 @@ import { Menu } from 'semantic-ui-react'
 const Sidebar = () => {
   return (
     <>
-      {/* <Menu text vertical fixed='left' id='sidebar'>
+      <Menu text vertical fixed='left' id='sidebar'>
         <Menu.Item header 
           className='sidebar-item'
           id='sidebar-header'
@@ -31,7 +31,7 @@ const Sidebar = () => {
           as={NavLink}
           to='/contact'
         />
-      </Menu> */}
+      </Menu>
     </>
   )
 }

@@ -68,3 +68,11 @@ body {
 .about-paragraph {
   font-size: 17px;
 }
+
+
+/* Contact */
+
+#contact-container {
+  text-align: center;
+  padding-top: 20%
+}

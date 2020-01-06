@@ -1,5 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import { Container, Form, Input, TextArea, Button } from 'semantic-ui-react'
 
 
 const ContactForm = () => {
@@ -16,16 +17,38 @@ const ContactForm = () => {
   }
 
   return (
-    <form className="contact-form" onSubmit={sendEmail}>
-      <input type="hidden" name="contact_number" />
-      <label>Name</label>
-      <input type="text" name="name" />
-      <label>Email</label>
-      <input type="email" name="email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+    <Container id='contact-container'>
+      <Form className="contact-form" onSubmit={sendEmail}>
+        <Form.Group widhts='equal'>
+        <Form.Field
+            id='contact-name'
+            control={Input}
+            label='Name'
+            placeholder='Name'
+            name='name'
+          />
+          <Form.Field
+            id='contact-email'
+            control={Input}
+            label='Email'
+            placeholder='Email'
+            name='email'
+          />
+        </Form.Group>
+        <Form.Field
+          id='contact-message'
+          control={TextArea}
+          label='Message'
+          placeholder='Write something..'
+          name='message'
+        />
+        <Form.Field
+          id='form-button-control-public'
+          control={Button}
+          content='Send'
+        />
+      </Form>
+    </Container>
   );
 }
 
