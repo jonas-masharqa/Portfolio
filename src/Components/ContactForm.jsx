@@ -49,7 +49,7 @@ const ContactForm = () => {
                       </div>
                   </div>
                   <div className="app-contact">
-                    CONTACT INFO SWE :<br /> +46 793 40 53 98
+                    SWEDEN NO :<br /> +46 793 40 53 98
                   </div>
                 </div>
                 <div className="screen-body-item">
