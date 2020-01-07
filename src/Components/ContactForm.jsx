@@ -1,5 +1,6 @@
 import React from 'react'
 import emailjs from 'emailjs-com'
+import { Icon } from 'semantic-ui-react'
 
 const ContactForm = () => {
 
@@ -25,6 +26,7 @@ const ContactForm = () => {
 
   return (
     <>
+    
       <form id="contact-form" onSubmit={sendEmail}>
         <div className="background">
           <div onSubmit={sendEmail} class="container">
@@ -36,6 +38,15 @@ const ContactForm = () => {
                     <span>CONTACT</span>
                     <br />
                     <span>ME</span>
+                      <div id='contact-icons'>
+                        <Icon size='large' name='github square'></Icon>
+                        <br/>
+                        <br/>
+                        <Icon size='large' name='linkedin square'></Icon>
+                        <br/>
+                        <br/>
+                        <Icon size='large' name='mail'><p id='email-adress'>jonas.masharqa@gmail.com</p></Icon>
+                      </div>
                   </div>
                   <div className="app-contact">
                     CONTACT INFO SWE :<br /> +46 793 40 53 98

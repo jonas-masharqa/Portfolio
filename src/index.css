@@ -308,3 +308,13 @@ body {
 #contact-form {
   margin-left: 250px;
 }
+
+#contact-icons {
+  padding-top: 30px
+}
+
+#email-adress {
+  margin-top: auto;
+  font-size: 9px;
+  color: #888;
+}
