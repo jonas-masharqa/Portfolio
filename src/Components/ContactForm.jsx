@@ -1,35 +1,49 @@
-import React from 'react'
+import React, { Component } from 'react'
 import emailjs from 'emailjs-com'
 import { Icon } from 'semantic-ui-react'
 
-const ContactForm = () => {
-
-  const sendEmail = e => {
+class ContactForm extends Component {
+  state = {
+    responseMessage: null
+  }
+  sendEmail = (e) => {
     e.preventDefault()
 
     emailjs
-      .sendForm(
-        'default_service',
-        'template_whQB4I7z',
-        e.target,
-        'user_Y0S8nUS9ZEDFDPQgBtEin'
-      )
-      .then(
-        result => {
-          console.log('success')
-        },
-        error => {
-          console.log('failed')
+    .sendForm(
+      'default_service',
+      'template_whQB4I7z',
+      e.target,
+      'user_Y0S8nUS9ZEDFDPQgBtEin'
+    )
+    .then(
+      result => {
+        debugger
+        if (result.status === 200) {
+          this.setState({
+            responseMessage: 'Email sent!'
+          })
         }
-      )
+      },
+      error => {
+        console.log('Failed, email not sent')
+      }
+    )
   }
+
+  render() {
+    let responseMessage
+
+    if (this.state.responseMessage) {
+      responseMessage = <p id='response-message'>{this.state.responseMessage}</p>
+    }
 
   return (
     <>
     
-      <form id="contact-form" onSubmit={sendEmail}>
+      <form id="contact-form" onSubmit={this.sendEmail}>
         <div className="background">
-          <div onSubmit={sendEmail} class="container">
+          <div className="container">
             <div className="screen">
               <div className="screen-header"></div>
               <div className="screen-body">
@@ -90,6 +104,9 @@ const ContactForm = () => {
                 </div>
               </div>
             </div>
+            <center>
+              {responseMessage}
+            </center>
             <div className="credits">
               inspired by
               <a
@@ -99,18 +116,18 @@ const ContactForm = () => {
               >
                 <svg className="dribbble" viewBox="0 0 200 200">
                   <g stroke="#ffffff" fill="none">
-                    <circle cx="100" cy="100" r="90" stroke-width="20"></circle>
+                    <circle cx="100" cy="100" r="90" strokeWidth="20"></circle>
                     <path
                       d="M62.737004,13.7923523 C105.08055,51.0454853 135.018754,126.906957 141.768278,182.963345"
-                      stroke-width="20"
+                      strokeWidth="20"
                     ></path>
                     <path
                       d="M10.3787186,87.7261455 C41.7092324,90.9577894 125.850356,86.5317271 163.474536,38.7920951"
-                      stroke-width="20"
+                      strokeWidth="20"
                     ></path>
                     <path
                       d="M41.3611549,163.928627 C62.9207607,117.659048 137.020642,86.7137169 189.041451,107.858103"
-                      stroke-width="20"
+                      strokeWidth="20"
                     ></path>
                   </g>
                 </svg>
@@ -122,6 +139,7 @@ const ContactForm = () => {
       </form>
     </>
   )
+  }
 }
 
 export default ContactForm
