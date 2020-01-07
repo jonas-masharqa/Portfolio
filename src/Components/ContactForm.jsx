@@ -39,10 +39,10 @@ const ContactForm = () => {
                     <br />
                     <span>ME</span>
                       <div id='contact-icons'>
-                        <Icon size='large' name='github square'></Icon>
+                        <a className='icon-link'href='https://github.com/jonas-masharqa'><Icon size='large' name='github square'/></a>
                         <br/>
                         <br/>
-                        <Icon size='large' name='linkedin square'></Icon>
+                        <a className='icon-link' href='https://se.linkedin.com/in/jonas-masharqa-b759bb18a/%7Bcountry%3Dse%2C+language%3Dsv%7D?trk=people-guest_profile-result-card_result-card_full-click'><Icon size='large' name='linkedin square'/></a>
                         <br/>
                         <br/>
                         <Icon size='large' name='mail'><p id='email-adress'>jonas.masharqa@gmail.com</p></Icon>
