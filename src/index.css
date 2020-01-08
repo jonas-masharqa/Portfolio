@@ -3,6 +3,18 @@ body {
   font-size: 12px;
 }
 
+/* Landing Page */
+
+#synthwave-pic {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+#synth-banner {
+  margin-left: 250px;
+}
+
 /* Sidebar */
 
 #sidebar {

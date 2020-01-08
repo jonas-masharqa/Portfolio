@@ -1,12 +1,13 @@
 import React from 'react'
+import Synthwave from '../Images/synthwave-banner.jpg'
 
 const LandingPage = () => {
+  const synthwavePic = <img id="synthwave-pic" src={Synthwave} alt="Jonas Picture"/>
   return (
     <>
-      <center>
-          <h1>Jonas Masharqa</h1>
-          <h3>Portfolio</h3>
-      </center>
+      <div id='synth-banner'>
+        {synthwavePic}
+      </div>
     </>
   )
 }
