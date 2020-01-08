@@ -88,6 +88,7 @@ class ContactForm extends Component {
 
     return (
       <>
+      <h1 id='contact-header'>Reach me here</h1>
         <form id="contact-form" onSubmit={this.emailHandler.bind(this)}>
           <div className="background">
             <div className="container">

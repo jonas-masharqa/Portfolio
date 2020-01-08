@@ -322,3 +322,8 @@ body {
 .icon-link {
   color: #ea1d6f;
 }
+
+#contact-header {
+  text-align: center;
+  margin-left: 250px;
+}
