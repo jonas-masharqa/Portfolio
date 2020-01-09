@@ -427,9 +427,6 @@ textarea {
 
 /* Footer */
 
-section {
-  text-align: center;
-}
 .footer #button {
   width: 35px;
   height: 35px;
@@ -443,6 +440,7 @@ section {
   -ms-transition: all 1s ease;
   transition: all 1s ease;
 }
+
 .footer #button:hover {
   width: 35px;
   height: 35px;
@@ -454,6 +452,7 @@ section {
   transition: all 1s ease;
   position: relative;
 }
+
 .footer {
   bottom: 0;
   left: 0;
@@ -469,6 +468,7 @@ section {
   transition: all 1s ease;
   z-index: 999;
 }
+
 .footer:hover {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -477,8 +477,8 @@ section {
   transition: all 1s ease;
   height: 10em;
 }
+
 .footer #container {
-  margin-top: 5px;
   width: 100%;
   height: 100%;
   position: relative;
@@ -486,25 +486,28 @@ section {
   left: 0;
   background: rgba(59, 85, 110, 0.459);
 }
-.footer #cont {
-  position: relative;
-  top: -45px;
-  right: 190px;
-  width: 150px;
-  height: auto;
-  margin: 0 auto;
-}
-.footer_center {
-  width: 500px;
-  float: left;
+
+.footer-center {
   text-align: center;
-  margin-left: 250px !important;
-}
-.footer h3 {
-  font-family: 'Helvetica';
-  font-size: 30px;
-  font-weight: 100;
-  margin-top: 70px;
-  margin-left: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+  color: white;
 }
 
+.footer p {
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+#copyright{
+  font-size: 15px;
+  font-family: 'Inconsolata', monospace;
+  color: white
+}
+
+.footer-center a {
+  color: white
+}
