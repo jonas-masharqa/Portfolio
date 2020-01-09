@@ -31,7 +31,7 @@ const LandingPage = () => {
         <div>{synthwavePic}</div>
       </div>
       <div id='work'>
-        <h2 id='work-header'>When working on my projects, I use a variety of programs and dependencies</h2>
+        <p className='work-paragraph'>When working on my projects<br/>I use a variety of programs and dependencies</p>
       </div>
       <Container id="landing-container">
         <Grid id="landing-grid" container columns={3}>
