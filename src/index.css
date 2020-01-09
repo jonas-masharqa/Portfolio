@@ -34,7 +34,45 @@ body {
 
 .banner-paragraph {
   font-family: 'Inconsolata', monospace;
-  font-size: 18px
+  font-size: 18px;
+  padding: 0 50px;
+}
+
+#landing-container {
+  margin-left: 250px !important;
+  display: block !important;
+  width: auto !important;
+  padding: 7rem 10% 5rem;
+}
+
+#landing-card{
+  text-align: center;
+  background-color: #f5f6f7;
+  box-shadow: none;
+  padding: 30px;
+  height: 400px;
+  width: 350px;
+  box-shadow: 5px 10px 15px 0 rgba(0, 0, 0, .1);
+}
+
+.card-pic{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 100% !important;
+  object-fit: cover;
+  background-color: white !important;
+  border: 2px solid #dddedf !important
+}
+
+.card-header{
+  font-family: 'Audiowide', cursive;
+  color: #ed1c6f;
+}
+
+.card-text{
+  font-family: 'Inconsolata', monospace;
+  font-size: 18px;
+  color: rgba(40, 59, 78, 0.959) !important;
 }
 
 /* Sidebar */
