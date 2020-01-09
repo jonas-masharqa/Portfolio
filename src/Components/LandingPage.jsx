@@ -30,6 +30,9 @@ const LandingPage = () => {
         </div>
         <div>{synthwavePic}</div>
       </div>
+      <div id='work'>
+        <h2 id='work-header'>When working on my projects, I use a variety of programs and dependencies</h2>
+      </div>
       <Container id="landing-container">
         <Grid id="landing-grid" container columns={3}>
           <Grid.Column className="landing-column">
@@ -40,7 +43,6 @@ const LandingPage = () => {
                 While writing the Back End parts of my projects, I've been
                 working in the Ruby on Rails framework so far.
               </p>
-              React
             </Card>
           </Grid.Column>
           <Grid.Column className="landing-column">
@@ -56,7 +58,7 @@ const LandingPage = () => {
           <Grid.Column className="landing-column">
             <Card id="landing-card">
               <center>{cypressPic}</center>
-              <h3 className="card-header">TDD</h3>
+              <h3 className="card-header">TDD/BDD</h3>
               <p className="card-text">
                 While writing the Back End parts of my projects, I've been
                 working in the Ruby on Rails framework so far.
