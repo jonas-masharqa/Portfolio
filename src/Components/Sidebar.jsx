@@ -5,33 +5,34 @@ import { Menu } from 'semantic-ui-react'
 const Sidebar = () => {
   return (
     <>
-      {/* <Menu text vertical fixed='left' id='sidebar'>
-        <Menu.Item header 
-          className='sidebar-item'
-          id='sidebar-header'
-          name='Jonas Masharqa'
-          as={NavLink}
-          to='/'
-        />
-        <Menu.Item 
-          className='sidebar-item'
-          name='Projects'
-          as={NavLink}
-          to='/projects'
-        />
-        <Menu.Item 
-          className='sidebar-item'
-          name='About me'
-          as={NavLink}
-          to='/about'
-        />
-        <Menu.Item 
-          className='sidebar-item'
-          name='Contact'
-          as={NavLink}
-          to='/contact'
-        />
-      </Menu> */}
+      <input
+        type="checkbox"
+        class="openSidebarMenu"
+        id="openSidebarMenu"
+      ></input>
+      <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+      </label>
+      <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+          <NavLink to="/">
+            <li>
+              Jonas Masharqa <span>Front End Developer</span>
+            </li>
+          </NavLink>
+          <NavLink to="/projects">
+            <li>Projects</li>
+          </NavLink>
+          <NavLink to="/about">
+            <li>About Me</li>
+          </NavLink>
+          <NavLink to="/contact">
+            <li>Contact</li>
+          </NavLink>
+        </ul>
+      </div>
     </>
   )
 }
