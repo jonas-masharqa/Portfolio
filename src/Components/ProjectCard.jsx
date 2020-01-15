@@ -1,21 +1,26 @@
 import React from 'react'
-import { Card, Image, Grid } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
 
-const ProjectCard = (props) => {
+const ProjectCard = props => {
   let project = props.project
   return (
     <>
       <Grid.Column>
-        <Card className='project-card'>
-          <Image 
-            className='project-image'
-            src={project.image}
-          />
-          <Card.Content>
-            <Card.Header>{project.name}</Card.Header>
-            <Card.Description>{project.info}</Card.Description>
-          </Card.Content>
-        </Card>
+        <div className="card">
+          <div class="image">
+            <img src={project.image} />
+          </div>
+          <div class="details">
+            <div class="center">
+              <h1>
+                {project.name}
+                <br />
+                <span>Project</span>
+              </h1>
+              <p>{project.info}</p>
+            </div>
+          </div>
+        </div>
       </Grid.Column>
     </>
   )

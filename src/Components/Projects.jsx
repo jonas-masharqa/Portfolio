@@ -47,7 +47,7 @@ class Projects extends Component {
             </a>
           </p>
         </div>
-        <Container>
+        <Container id='project-card-container'>
           <Grid className="project-grid" centered container columns={3}>
             <Grid.Row>{projectsList}</Grid.Row>
           </Grid>
