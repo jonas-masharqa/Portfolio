@@ -2,25 +2,57 @@
   {
     "id": 1,
     "name": "Project Wander",
-    "image": "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    "info": "Final Project"
+    "framework": "React",
+    "image": "https://images.unsplash.com/photo-1545254245-72bacb090900?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=657&q=80",
+    "info": "Final Project. Hiking app letting the user upload, like and bookmark trails all over the world. Built around Google map's API.",
+    "link": "https://projectwander.netlify.com/"
   },
   {
     "id": 2,
     "name": "Newsroom Challenge",
-    "image": "https://images.unsplash.com/photo-1504465039710-0f49c0a47eb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80",
-    "info": "Front end challenge for a news conglomerate"
+    "framework": "React",
+    "image": "https://images.unsplash.com/photo-1487900562037-056962ab1fb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80",
+    "info": "Front end challenge for a news conglomerate client. News platform translated in both english and swedish.",
+    "link": "https://newsroom-fake-news.netlify.com"
+  },
+  {
+    "id": 4,
+    "name": "Rock, Paper, Scissors",
+    "framework": "JavaScript",
+    "image": "https://www.clipartwiki.com/clipimg/detail/12-129344_rock-paper-scissors-mickey-mouse-hands-clipart-rock.png",
+    "info": "Web-based application of the popular game 'Rock, Paper, Scissors' where the user plays against a computer through randomized outputs.",
+    "link": "https://jonas-rpsgame.netlify.com"
   },
   {
     "id": 3,
     "name": "Midcourse Project",
-    "image": "https://images.unsplash.com/photo-1507638940746-7b17d6b55b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=658&q=80",
-    "info": "Cooking app using external API"
+    "framework": "Ruby on Rails",
+    "image": "https://images.unsplash.com/photo-1568555631745-39ee7d804995?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80",
+    "info": "Monolith cooking app using third party API. Receive recipes based on what's in you fridge.",
+    "link": "https://github.com/CraftAcademy/not_so_trivial_recepies"
   },
   {
     "id": 4,
     "name": "Cooper Challenge",
-    "image": "https://images.unsplash.com/photo-1571008887538-b36bb32f4571?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    "info": "Cooper Calulator with result chart"
+    "framework": "React & Ruby on Rails",
+    "image": "https://images.unsplash.com/photo-1509486432407-f8fb9cc99acd?ixlib=rb-1.2.1&auto=format&fit=crop&w=644&q=80",
+    "info": "Cooper Test Calulator with result chart. First time exploring the correlation between React and Ruby on Rails.",
+    "link": "https://jonas-yasmine-cooperapp.netlify.com"
+  },
+  {
+    "id": 4,
+    "name": "Adress Book Challenge",
+    "framework": "JavaScript",
+    "image": "https://images.unsplash.com/photo-1534298435681-3fd5153b0b7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80",
+    "info": "One of my first projects. Add contacts in an adress book built in vanilla JavaScript.",
+    "link": "https://geeze-squad.netlify.com"
+  },
+  {
+    "id": 4,
+    "name": "ATM Challenge",
+    "framework": "Ruby",
+    "image": "https://images.unsplash.com/photo-1539622287262-61e066a2c534?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+    "info": "My first Ruby project while attending a coding bootcamp. Basic ruby based project tested with RSpec.",
+    "link": "https://github.com/jonas-masharqa/atm_challenge_2019"
   }
 ]

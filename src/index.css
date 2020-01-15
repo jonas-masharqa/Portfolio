@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Audiowide|Inconsolata|Audiowide|Kodchasan:700|Michroma|Nova+Mono|Nova+Square|Space+Mono|Turret+Road:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Inconsolata|Audiowide|Kodchasan:700|Michroma|Nova+Mono|Nova+Square|Space+Mono|Sulphur+Point&display=swap');
 body {
   background-color: white;
 }
@@ -90,10 +90,11 @@ body {
 }
 .card-header {
   font-family: 'Audiowide', cursive;
+  font-size: 19px
 }
 .card-text {
-  font-family: 'Inconsolata', monospace;
-  font-size: 18px;
+  font-family: 'Sulphur Point', sans-serif;
+  font-size: 19px;
   color: rgba(40, 59, 78, 0.959) !important;
 }
 #work:before {
@@ -111,7 +112,7 @@ body {
   margin-bottom: 100px;
 }
 .work-paragraph {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Sulphur Point', sans-serif;
   font-size: 25px;
 }
 /* Sidebar */
@@ -178,6 +179,8 @@ body {
   padding: 20px;
   cursor: pointer;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-family: 'Sulphur Point', sans-serif;
+  font-size: 18px;
 }
 .sidebarMenuInner li span {
   display: block;
@@ -315,23 +318,6 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   margin-top: 80px
 }
 
-/* Project Cards */
-/* .project-image {
-  object-fit: cover;
-  height: 200px;
-}
-.project-card {
-  height: 280px;
-  margin: 35px !important;
-}
-#project-grid {
-  text-align: center;
-}
-#project-header {
-  text-align: center;
-  margin-bottom: 80px;
-  margin-top: 35px;
-} */
 /* About me */
 #jonas-pic {
   height: 500px;
@@ -669,7 +655,7 @@ textarea {
 }
 
 #tech-paragraph {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Sulphur Point', sans-serif;
   font-size: 25px;
 }
 
@@ -696,7 +682,7 @@ textarea {
   display: list-item;
   width: 33%;
   float: left;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Sulphur Point', sans-serif;
   font-size: 20px;
 }
 
@@ -736,12 +722,6 @@ textarea {
 
 .project-card {
   position: relative;
-  /* top: 50%;
-  left: 50%; */
-  /* transform: translate(-50%,-50%);
-  width: 360px;
-  height: 400px;
-  background: #000; */
   margin: 1.5rem;
 }
 .project-card .project-image {
@@ -765,7 +745,7 @@ textarea {
   left: 0;
   width: 70%;/*100%*/
   height: 100%;
-  background: #8e54af;
+  background: rgb(85, 35, 124);
   transition: .5s;
   transform-origin: left;
   transform: perspective(2000px) rotateY(-90deg);
@@ -785,10 +765,11 @@ textarea {
 .project-card .details .center h1 {
   margin: 0;
   padding: 0;
-  color: #ff3636;
+  color: #000000;
   line-height: 20px;
   font-size: 20px;
   text-transform: uppercase;
+  font-family: 'Audiowide', cursive;
 }
 .project-card .details .center h1 span {
   font-size: 14px;
@@ -798,6 +779,8 @@ textarea {
   margin: 10px 0;
   padding: 0;
   color: #262626;
+  font-family: 'Sulphur Point', sans-serif;
+  font-size: 15px;
 }
 .project-card .details .center ul {
   margin: 10px auto 0;
