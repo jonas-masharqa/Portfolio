@@ -1,6 +1,6 @@
 import React from 'react'
 import Iframe from './Iframe'
-import Tools from './Tools'
+import Technologies from './Technologies'
 import SynthBall from '../Images/synth_ball.jpg'
 import RubyLogo from '../Images/ruby_logo.png'
 import ReactLogo from '../Images/react_logo.png'
@@ -20,7 +20,6 @@ const LandingPage = () => {
   const cypressPic = (
     <Image className="card-pic" src={CypressLogo} alt="Cypress Logo" />
   )
-
   return (
     <>
       <div id="iframe-container">
@@ -57,8 +56,9 @@ const LandingPage = () => {
       </Container>
       <div id="work">
         <p className="work-paragraph">
-          When working on my projects
-          <br />I use a variety of programs and dependencies
+          While working on my projects
+          <br />
+          I've used a variety of frameworks and dependencies
         </p>
       </div>
       <br />
@@ -99,9 +99,15 @@ const LandingPage = () => {
           </Grid>
         </Container>
       </div>
-      <Tools />
+      <div id="technologies">
+        <p id="tech-paragraph">
+          These are some of the
+          <br />
+          technologies & methodologies I've worked with
+        </p>
+      </div>
+      <Technologies />
     </>
   )
 }
-
 export default LandingPage
