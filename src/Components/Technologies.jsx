@@ -9,7 +9,6 @@ class Technologies extends Component {
 
   componentDidMount() {
     axios.get('/data/technologies.json').then(response => {
-      debugger
       this.setState({
         data: response.data
       })
