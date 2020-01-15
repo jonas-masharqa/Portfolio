@@ -6,21 +6,23 @@ const ProjectCard = props => {
   return (
     <>
       <Grid.Column>
-        <div className="card">
-          <div class="image">
-            <img src={project.image} />
-          </div>
-          <div class="details">
-            <div class="center">
-              <h1>
-                {project.name}
-                <br />
-                <span>Project</span>
-              </h1>
-              <p>{project.info}</p>
+        <a href={project.link}>
+          <div className="project-card">
+            <div className="project-image">
+              <img id='project-image' src={project.image} />
+            </div>
+            <div class="details">
+              <div class="center">
+                <h1>
+                  {project.name}
+                  <br />
+                  <span>{project.framework}</span>
+                </h1>
+                <p>{project.info}</p>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </Grid.Column>
     </>
   )
