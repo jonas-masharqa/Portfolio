@@ -413,18 +413,42 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .project-card .details .center ul li a:hover {
   background: #ff3636;
 }
+
 /* About me */
+
+#about-container{
+ margin-top: 0;
+ padding-top: 50px;
+}
+
+#about-container2{
+  margin-left: 1000px !important;
+  margin-top: 100px;
+}
+
 #jonas-pic {
-  height: 500px;
+  height: 450px;
   border-radius: 2%;
   margin-left: 20px;
+  border: 2px solid #dddedf !important;
 }
-#about-text {
-  margin-right: 20px;
+#electric-pic{
+  height: 350px;
+  border-radius: 2%;
+  object-fit: cover;
+  margin-left: -20px;
+  border: 2px solid #dddedf !important;
+}
+.about-text {
   padding-top: 50px;
+  right: 5%;
 }
 .about-paragraph {
   font-size: 17px;
+  font-family: 'Sulphur Point', sans-serif;
+}
+.about-header{
+  font-family: 'Sulphur Point', sans-serif;
 }
 /* Contact */
 #contact-main-header{
