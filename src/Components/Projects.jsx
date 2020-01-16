@@ -3,12 +3,10 @@ import axios from 'axios'
 import RetroTech from '../Images/retro-tech.jpg'
 import ProjectCard from './ProjectCard'
 import { Grid, Container, Icon } from 'semantic-ui-react'
-
 class Projects extends Component {
   state = {
     projects: []
   }
-
   componentDidMount() {
     axios.get('/data/projectsData.json').then(response => {
       this.setState({
@@ -16,12 +14,10 @@ class Projects extends Component {
       })
     })
   }
-
   render() {
-    const retroPic = <img id="retro-pic" src={RetroTech} alt="Jonas Picture" />
+    const retroPic = <img className="retro-pic" src={RetroTech} alt="Retro Picture" />
     const projects = this.state.projects
     let projectsList
-
     if (projects.length > 0) {
       projectsList = projects.map(project => {
         return (
@@ -31,7 +27,6 @@ class Projects extends Component {
         )
       })
     }
-
     return (
       <>
         <div className="banner-container">
@@ -56,5 +51,4 @@ class Projects extends Component {
     )
   }
 }
-
 export default Projects
