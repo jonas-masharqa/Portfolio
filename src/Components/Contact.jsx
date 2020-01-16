@@ -11,11 +11,13 @@ class Contact extends Component {
     email: '',
     message: ''
   }
+
   inputHandler = e => {
     this.setState({
       [e.target.name]: e.target.value
     })
   }
+
   emailHandler = e => {
     e.preventDefault()
     this.setState({
@@ -23,6 +25,7 @@ class Contact extends Component {
     })
     this.sendEmail(this.state.form)
   }
+
   emailHandler = async e => {
     e.preventDefault()
     await this.setState({
@@ -41,6 +44,7 @@ class Contact extends Component {
       })
     }
   }
+
   sendEmail = form => {
     emailjs
       .sendForm(
@@ -64,19 +68,21 @@ class Contact extends Component {
         }
       )
   }
+
   render() {
-    const arcadePic = (
-      <img className="retro-pic" src={Arcade} alt="Arcade Picture" />
-    )
+    const arcadePic = <img className="retro-pic" src={Arcade} alt="Arcade Picture" />
     let responseMessage, errorMessage
+
     if (this.state.responseMessage) {
       responseMessage = (
         <p id="response-message">{this.state.responseMessage}</p>
       )
     }
+
     if (this.state.errorMessage) {
       errorMessage = <p id="error-message">{this.state.errorMessage}</p>
     }
+    
     return (
       <>
         <div className="banner-container">
@@ -88,7 +94,7 @@ class Contact extends Component {
             Any questions?
             <br /> Feel free to write or call!
           </p>
-          <ContactForm 
+          <ContactForm
             inputHandler={this.inputHandler}
             responseMessage={this.state.responseMessage}
             errorMessage={this.state.errorMessage}
