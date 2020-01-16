@@ -20,6 +20,7 @@
     "Shoulda Matchers",
     "PostgreSQL",
     "React Router DOM",
+    "i18next",
     "Heroku",
     "Semantic UI",
     "Axios",
