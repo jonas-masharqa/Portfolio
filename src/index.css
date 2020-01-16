@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Audiowide|Inconsolata|Audiowide|Kodchasan:700|Michroma|Nova+Mono|Nova+Square|Space+Mono|Sulphur+Point&display=swap');
-body {
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Kodchasan:700|Michroma|Sulphur+Point&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+html, body {
   background-color: white;
+  overflow-x: hidden;
 }
 
 /* Landing Page */
@@ -12,10 +15,12 @@ body {
   opacity: 0.9;
   box-shadow: 0 4px 10px 0;
 }
+
 #synth-banner {
   position: relative;
   height: 600px;
 }
+
 .banner-text {
   text-align: center;
   position: absolute;
@@ -24,6 +29,7 @@ body {
   top: 28%;
   transform: translateX(-50%);
 }
+
 #banner-header {
   font-family: 'Michroma', sans-serif;
   font-size: 1.5vw;
@@ -37,6 +43,7 @@ body {
   height: 70vh;
   margin-left: 300px !important;
 }
+
 #intro-header {
   font-family: 'Michroma', sans-serif;
   font-size: 70px;
@@ -72,10 +79,12 @@ body {
   font-size: 35px;
   margin-bottom: 40px;
 }
+
 #intro-paragraph2 {
   font-family: 'Michroma', sans-serif;
   font-size: 17px;
 }
+
 #landing-container {
   width: auto !important;
   position: absolute;
@@ -83,6 +92,7 @@ body {
   transform: translate(-50%, -50%);
   left: 50%;
 }
+
 #landing-card {
   text-align: center;
   background-color: #f5f6f7f3;
@@ -93,6 +103,7 @@ body {
   box-shadow: 5px 10px 15px 0 rgba(0, 0, 0, 0.1);
   margin: 2rem;
 }
+
 .card-pic {
   height: 10rem;
   width: 10rem;
@@ -101,15 +112,18 @@ body {
   background-color: white !important;
   border: 2px solid #dddedf !important;
 }
+
 .card-header {
   font-family: 'Audiowide', cursive;
   font-size: 19px
 }
+
 .card-text {
   font-family: 'Sulphur Point', sans-serif;
   font-size: 19px;
   color: rgba(40, 59, 78, 0.959) !important;
 }
+
 #work:before {
   content: '';
   display: block;
@@ -119,21 +133,20 @@ body {
   left: 50%;
   margin: 2rem 0 2rem 0;
 }
+
 #work {
   margin-top: 100px;
   text-align: center;
   margin-bottom: 100px;
 }
+
 .work-paragraph {
   font-family: 'Sulphur Point', sans-serif;
   font-size: 25px;
 }
+
 /* Sidebar */
-@import url('https://fonts.googleapis.com/css?family=Varela+Round');
-html,
-body {
-  overflow-x: hidden;
-}
+
 .side-header {
   left: 0;
   margin: 0 auto;
