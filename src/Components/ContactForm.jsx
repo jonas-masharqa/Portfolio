@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import emailjs from 'emailjs-com'
 import { Icon } from 'semantic-ui-react'
-
+import Arcade from '../Images/arcade.jpg'
 class ContactForm extends Component {
   state = {
     responseMessage: null,
@@ -11,30 +11,23 @@ class ContactForm extends Component {
     email: '',
     message: ''
   }
-
   inputHandler = e => {
     this.setState({
       [e.target.name]: e.target.value
     })
   }
-
   emailHandler = e => {
     e.preventDefault()
-
     this.setState({
       form: e.target
     })
-
     this.sendEmail(this.state.form)
   }
-
   emailHandler = async e => {
     e.preventDefault()
-
     await this.setState({
       form: e.target
     })
-
     if (
       this.state.name.length > 0 &&
       this.state.email.includes('@') &&
@@ -48,7 +41,6 @@ class ContactForm extends Component {
       })
     }
   }
-
   sendEmail = form => {
     emailjs
       .sendForm(
@@ -72,23 +64,31 @@ class ContactForm extends Component {
         }
       )
   }
-
   render() {
+    const arcadePic = (
+      <img className="retro-pic" src={Arcade} alt="Arcade Picture" />
+    )
     let responseMessage, errorMessage
-
     if (this.state.responseMessage) {
       responseMessage = (
         <p id="response-message">{this.state.responseMessage}</p>
       )
     }
-
     if (this.state.errorMessage) {
       errorMessage = <p id="error-message">{this.state.errorMessage}</p>
     }
-
     return (
       <>
-      <h1 id='contact-header'>Reach me here</h1>
+        <div className="banner-container">
+          {arcadePic}
+          <h1 className="banner-header">Get in touch</h1>
+        </div>
+        <div id="contact-header-container">
+          <p id="contact-main-header">
+            Any questions?
+            <br /> Feel free to write or call!
+          </p>
+        </div>
         <form id="contact-form" onSubmit={this.emailHandler.bind(this)}>
           <div className="background">
             <div className="container">
@@ -210,5 +210,4 @@ class ContactForm extends Component {
     )
   }
 }
-
 export default ContactForm
