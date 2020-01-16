@@ -3,9 +3,7 @@ import Profile from '../Images/profpic.jpg'
 import { Image, Header } from 'semantic-ui-react'
 
 const Intro = () => {
-  const profPic = (
-    <Image id="prof-pic" src={Profile} alt="Jonas Profile Pic" />
-  )
+  const profPic = <Image id="prof-pic" src={Profile} alt="Jonas Profile Pic" />
 
   return (
     <>

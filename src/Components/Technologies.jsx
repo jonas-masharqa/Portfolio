@@ -17,9 +17,7 @@ class Technologies extends Component {
 
   render() {
     const data = this.state.data
-    let frameworkList
-    let dependencyList
-    let skillList
+    let frameworkList, dependencyList, skillList
 
     if (data) {
       frameworkList = data.frameworks.map(framework => {
