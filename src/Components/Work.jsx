@@ -3,21 +3,17 @@ import SynthBall from '../Images/synth_ball.jpg'
 import RubyLogo from '../Images/ruby_logo.png'
 import ReactLogo from '../Images/react_logo.png'
 import CypressLogo from '../Images/cypress.png'
-import { Grid, Container, Card, Image, Header } from 'semantic-ui-react'
+import { Grid, Card, Image } from 'semantic-ui-react'
 
 const Work = () => {
-  const synthwaveBall = (
-    <img id="synthwave-pic" src={SynthBall} alt="Synthwave Picture" />
-  )
-  const rubyPic = (
-    <Image className="card-pic" src={RubyLogo} alt="Ruby on Rails Logo" />
-  )
-  const reactPic = (
-    <Image className="card-pic" src={ReactLogo} alt="React Logo" />
-  )
-  const cypressPic = (
-    <Image className="card-pic" src={CypressLogo} alt="Cypress Logo" />
-  )
+  const synthwaveBall = <img id="synthwave-pic" src={SynthBall} alt="Synthwave Picture" />
+
+  const rubyPic = <Image className="card-pic" src={RubyLogo} alt="Ruby on Rails Logo" />
+
+  const reactPic = <Image className="card-pic" src={ReactLogo} alt="React Logo" />
+
+  const cypressPic = <Image className="card-pic" src={CypressLogo} alt="Cypress Logo" />
+
   return (
     <>
       <div id="work">
