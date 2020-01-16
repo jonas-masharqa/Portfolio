@@ -58,7 +58,7 @@ const LandingPage = () => {
         <p className="work-paragraph">
           While working on my projects
           <br />
-          I've used a variety of frameworks and dependencies
+          I use a variety of frameworks and dependencies
         </p>
       </div>
       <br />
