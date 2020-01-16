@@ -70,7 +70,7 @@ html, body {
   width: 22rem;
   border-radius: 100%;
   object-fit: cover;
-  border: 2px solid #000000 !important;
+  border: 2px solid #909090 !important;
   left: 50%;
 }
 
