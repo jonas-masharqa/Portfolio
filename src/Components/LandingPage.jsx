@@ -2,24 +2,29 @@ import React from 'react'
 import Iframe from './Iframe'
 import Technologies from './Technologies'
 import SynthBall from '../Images/synth_ball.jpg'
+import Profile from '../Images/profpic.jpg'
 import RubyLogo from '../Images/ruby_logo.png'
 import ReactLogo from '../Images/react_logo.png'
 import CypressLogo from '../Images/cypress.png'
 import { Grid, Container, Card, Image, Header } from 'semantic-ui-react'
 
 const LandingPage = () => {
+  const profPic = (
+    <Image id="prof-pic" src={Profile} alt="Jonas Profile Pic" />
+  )
   const synthwaveBall = (
-    <img id="synthwave-pic" src={SynthBall} alt="Jonas Picture" />
+    <img id="synthwave-pic" src={SynthBall} alt="Synthwave Picture" />
   )
   const rubyPic = (
     <Image className="card-pic" src={RubyLogo} alt="Ruby on Rails Logo" />
   )
   const reactPic = (
-    <Image className="card-pic" src={ReactLogo} alt="Cypress Logo" />
+    <Image className="card-pic" src={ReactLogo} alt="React Logo" />
   )
   const cypressPic = (
     <Image className="card-pic" src={CypressLogo} alt="Cypress Logo" />
   )
+
   return (
     <>
       <div id="iframe-container">
@@ -36,24 +41,31 @@ const LandingPage = () => {
           </h1>
         </div>
       </div>
-      <Container id="intro-container">
-        <Header id="intro-header" as="h1">
-          Hi! <br />
-          I'm Jonas
-        </Header>
-        <p id="intro-paragraph">
-          Always applying the <br /> agile approach, <br /> while working in a{' '}
-          <br />
-          test driven environment!
-        </p>
-        <p id="intro-paragraph2">
-          Ever since programming caught my interest, I've been advancing in both
-          Front and Backend Web Development.
-          <br />
-          As time went by, I developed a growing passion for the Front End side
-          of the creative process.
-        </p>
-      </Container>
+      <div id="intro-container">
+        <div id='text-pic'>
+          <div id='container-text'>
+            <Header id="intro-header" as="h1">
+              Hi! <br />
+              I'm Jonas
+            </Header>
+            <p id="intro-paragraph">
+              Always applying the <br /> agile approach, <br /> while working in a{' '}
+              <br />
+              test driven environment!
+            </p>
+            <p id="intro-paragraph2">
+              Ever since programming caught my interest, I've been advancing in both
+              Front and Backend Web Development.
+              <br />
+              As time went by, I developed a growing passion for the Front End side
+              of the creative process.
+            </p>
+          </div>
+          <div id='container-pic'>
+            {profPic}
+          </div>
+        </div>
+      </div>
       <div id="work">
         <p className="work-paragraph">
           While working on my projects
@@ -64,7 +76,7 @@ const LandingPage = () => {
       <br />
       <div id="synth-banner">
         <div id="card-banner">{synthwaveBall}</div>
-        <Container id="landing-container">
+        <div id="landing-container">
           <Grid id="landing-grid" container columns={3}>
             <Grid.Column className="landing-column">
               <Card id="landing-card">
@@ -97,7 +109,7 @@ const LandingPage = () => {
               </Card>
             </Grid.Column>
           </Grid>
-        </Container>
+        </div>
       </div>
       <div id="technologies">
         <p id="tech-paragraph">
