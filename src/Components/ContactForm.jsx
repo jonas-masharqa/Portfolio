@@ -1,7 +1,23 @@
 import React from 'react'
-import { Icon } from 'semantic-ui-react'
+import { Icon, Message } from 'semantic-ui-react'
 
 const ContactForm = (props) => {
+  let responseMessage, errorMessage
+
+    if (props.responseMessage) {
+      responseMessage = (
+        <Message positive id="response-message">
+          {props.responseMessage}
+        </Message>
+      )
+    }
+
+    if (props.errorMessage) {
+      errorMessage = <Message negative id="error-message">
+        {props.errorMessage}
+      </Message>
+    }
+
   return (
     <>
       <form id="contact-form" onSubmit={props.emailHandler.bind(this)}>
@@ -83,8 +99,8 @@ const ContactForm = (props) => {
                 </div>
               </div>
               <center>
-                {props.responseMessage}
-                <div>{props.errorMessage}</div>
+                {responseMessage}
+                <div>{errorMessage}</div>
               </center>
               <div className="credits">
                 inspired by

@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import ContactForm from './ContactForm'
 import emailjs from 'emailjs-com'
 import Arcade from '../Images/arcade.jpg'
+import { Icon } from 'semantic-ui-react'
+
 class Contact extends Component {
   state = {
     responseMessage: null,
@@ -71,17 +73,6 @@ class Contact extends Component {
 
   render() {
     const arcadePic = <img className="retro-pic" src={Arcade} alt="Arcade Picture" />
-    let responseMessage, errorMessage
-
-    if (this.state.responseMessage) {
-      responseMessage = (
-        <p id="response-message">{this.state.responseMessage}</p>
-      )
-    }
-
-    if (this.state.errorMessage) {
-      errorMessage = <p id="error-message">{this.state.errorMessage}</p>
-    }
     
     return (
       <>
