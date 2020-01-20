@@ -1,95 +1,26 @@
-import React, { Component } from 'react'
-import emailjs from 'emailjs-com'
-import { Icon } from 'semantic-ui-react'
-import Arcade from '../Images/arcade.jpg'
-class ContactForm extends Component {
-  state = {
-    responseMessage: null,
-    errorMessage: null,
-    form: null,
-    name: '',
-    email: '',
-    message: ''
-  }
-  inputHandler = e => {
-    this.setState({
-      [e.target.name]: e.target.value
-    })
-  }
-  emailHandler = e => {
-    e.preventDefault()
-    this.setState({
-      form: e.target
-    })
-    this.sendEmail(this.state.form)
-  }
-  emailHandler = async e => {
-    e.preventDefault()
-    await this.setState({
-      form: e.target
-    })
-    if (
-      this.state.name.length > 0 &&
-      this.state.email.includes('@') &&
-      this.state.message.length > 10
-    ) {
-      this.sendEmail(this.state.form)
-    } else {
-      this.setState({
-        errorMessage:
-          'Please enter your name, a valid Email, and at least 10 characters in your message.'
-      })
-    }
-  }
-  sendEmail = form => {
-    emailjs
-      .sendForm(
-        'default_service',
-        'template_whQB4I7z',
-        form,
-        'user_Y0S8nUS9ZEDFDPQgBtEin'
-      )
-      .then(
-        result => {
-          if (result.status === 200) {
-            this.setState({
-              responseMessage: 'Email sent!'
-            })
-          }
-        },
-        error => {
-          this.setState({
-            errorMessage: 'Failed, email was not sent.'
-          })
-        }
-      )
-  }
-  render() {
-    const arcadePic = (
-      <img className="retro-pic" src={Arcade} alt="Arcade Picture" />
-    )
-    let responseMessage, errorMessage
-    if (this.state.responseMessage) {
+import React from 'react'
+import { Icon, Message } from 'semantic-ui-react'
+
+const ContactForm = (props) => {
+  let responseMessage, errorMessage
+
+    if (props.responseMessage) {
       responseMessage = (
-        <p id="response-message">{this.state.responseMessage}</p>
+        <Message positive id="response-message">
+          {props.responseMessage}
+        </Message>
       )
     }
-    if (this.state.errorMessage) {
-      errorMessage = <p id="error-message">{this.state.errorMessage}</p>
+
+    if (props.errorMessage) {
+      errorMessage = <Message negative id="error-message">
+        {props.errorMessage}
+      </Message>
     }
-    return (
-      <>
-        <div className="banner-container">
-          {arcadePic}
-          <h1 className="banner-header">Get in touch</h1>
-        </div>
-        <div id="contact-header-container">
-          <p id="contact-main-header">
-            Any questions?
-            <br /> Feel free to write or call!
-          </p>
-        </div>
-        <form id="contact-form" onSubmit={this.emailHandler.bind(this)}>
+
+  return (
+    <>
+      <form id="contact-form" onSubmit={props.emailHandler.bind(this)}>
           <div className="background">
             <div className="container">
               <div className="screen">
@@ -130,7 +61,7 @@ class ContactForm extends Component {
                     <div className="app-form">
                       <div className="app-form-group">
                         <input
-                          onChange={this.inputHandler}
+                          onChange={props.inputHandler}
                           name="name"
                           className="app-form-control"
                           placeholder="ENTER YOUR NAME"
@@ -138,7 +69,7 @@ class ContactForm extends Component {
                       </div>
                       <div className="app-form-group">
                         <input
-                          onChange={this.inputHandler}
+                          onChange={props.inputHandler}
                           name="email"
                           className="app-form-control"
                           placeholder="ENTER YOUR EMAIL"
@@ -153,7 +84,7 @@ class ContactForm extends Component {
                       </div>
                       <div className="app-form-group message">
                         <textarea
-                          onChange={this.inputHandler}
+                          onChange={props.inputHandler}
                           name="message"
                           id="message-field"
                           className="app-form-control"
@@ -206,8 +137,8 @@ class ContactForm extends Component {
             </div>
           </div>
         </form>
-      </>
-    )
-  }
+    </>
+  )
 }
+
 export default ContactForm

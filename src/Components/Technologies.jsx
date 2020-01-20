@@ -17,9 +17,7 @@ class Technologies extends Component {
 
   render() {
     const data = this.state.data
-    let frameworkList
-    let dependencyList
-    let skillList
+    let frameworkList, dependencyList, skillList
 
     if (data) {
       frameworkList = data.frameworks.map(framework => {
@@ -41,6 +39,13 @@ class Technologies extends Component {
 
     return (
       <>
+        <div id="technologies">
+          <p id="tech-paragraph">
+            These are some of the
+            <br />
+            technologies & methodologies I've worked with
+          </p>
+        </div>
         <Container id="tech-container">
           <div id="framework-list">
             <h1 className="list-header">Frameworks / Libraries</h1>
