@@ -12,11 +12,32 @@
     "Safety courses (Circle K) - Emergencies/Stress/Pressure",
     "Medical  delegation (Frösunda Omsorg AB)."
   ],
-  "experience": [
+  "experiences": [
     "Hi3g Access - Store salesman.",
     "Hi3g Access - Sales Support.",
     "Circle K  - Store salesman.",
     "Frösunda Omsorg AB - Caretaker.",
-    "Eagle Eye English - Copywriter."
+    "Eagle Eye English - Copywriter.",
+    "DJ - Resident + Private gatherings",
+    "Own operations - Info can be given on request."
+  ],
+  "progLanguages": [
+    "HTML 5",
+    "CSS",
+    "JavaScript",
+    "Ruby",
+    "ReactJS",
+    "Ruby on Rails",
+    "Cypress",
+    "RSpec"
+  ],
+  "merits": [
+    "Driver’s licence B.",
+    "Cash register experience.",
+    "Certified vehicle technician.",
+    "Certified welder.",
+    "Educated in reconditioning.",
+    "Great computer skills in Windows and Linux. IOS basics.",
+    "Former martial arts instructor - Stockholms Wushu Institute."
   ]
 }

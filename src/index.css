@@ -511,6 +511,31 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   font-family: 'Sulphur Point', sans-serif;
 }
 
+/* CV */
+
+#cv{
+  margin-top: 0;
+  padding-top: 50px;
+  background-color: #f5f6f788;
+  box-shadow: 0 19px 40px rgba(0, 0, 0, 0.178);
+  border-radius: 1%;
+  padding-right: 5rem !important;
+  padding-left: 7rem !important;
+  width: 45%;
+}
+
+#cv-header{
+  font-size: 35px;
+}
+
+.cv-text{
+  font-family: 'Sulphur Point', sans-serif;
+}
+
+#cv-text2{
+  font-size: 16px;
+}
+
 /* Contact */
 
 #contact-main-header{
@@ -539,7 +564,7 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 button,
 input,
 textarea {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Michroma', sans-serif;
   font-weight: 700;
   letter-spacing: 1.4px;
 }
@@ -667,6 +692,7 @@ textarea {
 
 .app-form-control::placeholder {
   color: #666;
+  font-family: 'Sulphur Point', sans-serif;
 }
 
 .app-form-control:focus {
