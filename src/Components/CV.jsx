@@ -21,7 +21,7 @@ class CV extends Component {
 
     if (resume) {
       goals = resume.goals.map(goal => {
-        return <li className='cv-text' id='cv-text2'>{goal}</li>
+        return <p className='cv-text' id='cv-text2'>{goal}</p>
       })
     }
 
@@ -65,7 +65,7 @@ class CV extends Component {
           {experiences}
           <h2 className='cv-text'>Programming Languages & Frameworks/Libraries etc</h2>
           {progLanguages}
-          <h2>Languages</h2>
+          <h2 className='cv-text'>Languages</h2>
           <li className='cv-text' id='cv-text2'>Swedish - Native language</li>
           <li className='cv-text' id='cv-text2'>
             English - Very good knowledge both grammatically and speech wise on
