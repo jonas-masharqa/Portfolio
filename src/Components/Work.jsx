@@ -32,8 +32,9 @@ const Work = () => {
                 <center>{reactPic}</center>
                 <h3 className="card-header">ReactJS</h3>
                 <p className="card-text">
-                  While writing the Back End parts of my projects, I've been
-                  working in the Ruby on Rails framework so far.
+                  Currently, I'm working mainly with the React library.
+                  I'm excited to advance even further into it, but I'm also feeling very
+                  open to trying out new kinds of libraries and frameworks.
                 </p>
               </Card>
             </Grid.Column>
@@ -52,8 +53,9 @@ const Work = () => {
                 <center>{cypressPic}</center>
                 <h3 className="card-header">TDD/BDD</h3>
                 <p className="card-text">
-                  While writing the Back End parts of my projects, I've been
-                  working in the Ruby on Rails framework so far.
+                  From the beiginning, I've been working with test driven development.
+                  The benefits of combining TDD with behaviour driven development have been clear to me
+                  from the start.
                 </p>
               </Card>
             </Grid.Column>

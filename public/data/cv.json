@@ -6,17 +6,13 @@
   ],
   "education": [
     "Yrkesplugget Bromma. Gymnasial qualification - Vehicular technical program. 17,3 P (Merit).",
-    "Coding Bootcamp 3 months + 1 month prep course (Craft Academy) - Fullstack Web Development",
+    "Coding Bootcamp 3 months + 1 month ITP course (Craft Academy) - Fullstack Web Development",
     "Various sales courses  (Hi3g Access, Canal Digital etc) - Sales technique/Service.",
-    "Communication  (Hi3g Access) - Relations/Service.",
-    "Safety courses (Circle K) - Emergencies/Stress/Pressure",
-    "Medical  delegation (Frösunda Omsorg AB)."
+    "Communication  (Hi3g Access) - Relations/Service."
   ],
   "experiences": [
-    "Hi3g Access - Store salesman.",
+    "Hi3g Access - Retail salesman.",
     "Hi3g Access - Sales Support.",
-    "Circle K  - Store salesman.",
-    "Frösunda Omsorg AB - Caretaker.",
     "Eagle Eye English - Copywriter.",
     "DJ - Resident + Private gatherings",
     "Own operations - Info can be given on request."
@@ -31,13 +27,15 @@
     "Cypress",
     "RSpec"
   ],
+  "softSkills": [
+    "Pair programming",
+    "Agile Methodologies",
+    "Scrum"
+  ],
   "merits": [
-    "Driver’s licence B.",
+    "Driver’s license type B.",
     "Cash register experience.",
     "Certified vehicle technician.",
-    "Certified welder.",
-    "Educated in reconditioning.",
-    "Great computer skills in Windows and Linux. IOS basics.",
-    "Former martial arts instructor - Stockholms Wushu Institute."
+    "Computer efficiency in Windows and Linux. IOS basics."
   ]
 }
