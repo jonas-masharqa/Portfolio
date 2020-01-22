@@ -126,14 +126,7 @@ class CV extends Component {
             <br />
             <br />
             During my travels, I really feel like I got a grasp on how to handle
-            and connect with all kinds of different people. Even more so when i
-            started my own business, Tribal Pai Backpackers, a hostel with a
-            restaurant and bar. 
-            <br />
-            While running the hostel, I learned how to
-            manage people, but also how to make colleagues and employees feel
-            valuable as well as the importance of having a strong connection as
-            a team.
+            and connect with all kinds of different people.
           </p>
           <h2 className="cv-text">References</h2>
           <p className="cv-text" id="cv-text2">
