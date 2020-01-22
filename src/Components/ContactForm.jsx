@@ -54,7 +54,7 @@ const ContactForm = (props) => {
                       </div>
                     </div>
                     <div className="app-contact">
-                      SWEDEN NO :<br /> +46 793 40 53 98
+                      SWEDEN No :<br /> +46 793 40 53 98
                     </div>
                   </div>
                   <div className="screen-body-item">

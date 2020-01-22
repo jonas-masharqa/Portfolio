@@ -6,7 +6,7 @@ const Iframe = () => {
       <div id="iframe-container">
         <div id="iframe-wrapper">
           <iframe
-            src="//fast.wistia.net/embed/iframe/j7nbk130l6?"
+            src="//fast.wistia.net/embed/iframe/90uezxx8ob?"
             frameborder="0"
             scrolling="no"
             class="wistia_embed"

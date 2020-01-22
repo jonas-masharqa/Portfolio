@@ -15,12 +15,12 @@ const AboutMe = () => {
           <Grid.Column className="about-text" width={7}>
             <h1 className="about-header">Jonas Masharqa</h1>
             <p className="about-paragraph">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+              I'm 25 years old born and raised in the capital of Sweden, Stockholm.
+              After traveling and living abroad part time for the last five years, I'm now
+              based in Sweden again, looking for new experiences.
+              <br />
+              Whatever I do, I'm always looking for opportunities to learn and advance,
+              whether it's about DJ'ing, web development, or personal growth.
             </p>
           </Grid.Column>
         </Grid>
@@ -30,12 +30,14 @@ const AboutMe = () => {
           <Grid.Column className="about-text" width={7}>
             <h1 className="about-header">Work & Education</h1>
             <p className="about-paragraph">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+              It's safe to say that the experiences I've gotten from working are very different from eachother.
+              From car technician to sales man, caretaker to sales support agent,
+              and finally doing my own projects along with DJ'ing.
+              Despite the differences, almost every job I've had has involved working with people
+              and/or solving problems.
+              <br />
+              After getting into web development, I attended a coding bootcamp. I'm now very eager to continue this journey and to find a place where I can
+              keep learning, contribute, and grow.
             </p>
           </Grid.Column>
           <Grid.Column width={7}>{electricValley}</Grid.Column>
