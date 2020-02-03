@@ -6,7 +6,7 @@ import CypressLogo from '../Images/cypress.png'
 import { Grid, Card, Image } from 'semantic-ui-react'
 
 const Work = () => {
-  const synthwaveBall = <img id="synthwave-pic" src={SynthBall} alt="Synthwave Picture" />
+  const synthwaveBall = <img id="synthwave-pic" src={SynthBall} alt="Synthwave" />
 
   const rubyPic = <Image className="card-pic" src={RubyLogo} alt="Ruby on Rails Logo" />
 

@@ -5,7 +5,7 @@ import { Icon } from 'semantic-ui-react'
 const Footer = () => {
   return (
     <>
-      <div class="footer">
+      <div className="footer">
         <div id="button"></div>
         <div id="container">
           <div className="footer-center">
@@ -29,7 +29,7 @@ const Footer = () => {
               <NavLink to={'/about'}>About Me</NavLink>
               <span> :: </span>
               <NavLink to={'/contact'}>Contact</NavLink>
-              <p id="copyright">Copyright © 2020 Jonas Masharqa</p>
+              <span> id="copyright">Copyright © 2020 Jonas Masharqa</span>
             </p>
           </div>
         </div>

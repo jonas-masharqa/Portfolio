@@ -9,10 +9,10 @@ const ProjectCard = props => {
         <a href={project.link}>
           <div className="project-card">
             <div className="project-image">
-              <img id='project-image' src={project.image} />
+              <img id='project-image' src={project.image} alt='project' />
             </div>
-            <div class="details">
-              <div class="center">
+            <div className="details">
+              <div className="center">
                 <h1>
                   {project.name}
                   <br />

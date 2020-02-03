@@ -108,6 +108,7 @@ const ContactForm = (props) => {
                   className="credits-link"
                   href="https://dribbble.com/shots/2666271-Contact"
                   target="_blank"
+                  rel='noopener noreferrer'
                 >
                   <svg className="dribbble" viewBox="0 0 200 200">
                     <g stroke="#ffffff" fill="none">

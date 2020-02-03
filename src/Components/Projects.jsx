@@ -15,7 +15,7 @@ class Projects extends Component {
     })
   }
   render() {
-    const retroPic = <img className="retro-pic" src={RetroTech} alt="Retro Picture" />
+    const retroPic = <img className="retro-pic" src={RetroTech} alt="Retro" />
     const projects = this.state.projects
     let projectsList
     if (projects.length > 0) {

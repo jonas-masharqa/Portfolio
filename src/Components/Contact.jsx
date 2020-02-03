@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import ContactForm from './ContactForm'
 import emailjs from 'emailjs-com'
 import Arcade from '../Images/arcade.jpg'
-import { Icon } from 'semantic-ui-react'
 
 class Contact extends Component {
   state = {
@@ -72,7 +71,7 @@ class Contact extends Component {
   }
 
   render() {
-    const arcadePic = <img className="retro-pic" src={Arcade} alt="Arcade Picture" />
+    const arcadePic = <img className="retro-pic" src={Arcade} alt="Arcade" />
     
     return (
       <>

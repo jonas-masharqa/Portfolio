@@ -6,10 +6,11 @@ const Iframe = () => {
       <div id="iframe-container">
         <div id="iframe-wrapper">
           <iframe
+            title='synthwave'
             src="//fast.wistia.net/embed/iframe/90uezxx8ob?"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
-            class="wistia_embed"
+            className="wistia_embed"
             name="wistia_embed"
             width="100%"
             height="1000px"

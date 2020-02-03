@@ -4,8 +4,8 @@ import ElectricV from '../Images/electric_valley.jpg'
 import { Grid, Container } from 'semantic-ui-react'
 
 const AboutMe = () => {
-  const profPic = <img id="jonas-pic" src={Profile} alt="Jonas Picture" />
-  const electricValley = <img id="electric-pic" src={ElectricV} alt="DJ Picture" />
+  const profPic = <img id="jonas-pic" src={Profile} alt="Jonas" />
+  const electricValley = <img id="electric-pic" src={ElectricV} alt="DJ" />
 
   return (
     <>
@@ -26,7 +26,7 @@ const AboutMe = () => {
         </Grid>
       </Container>
       <Container id="about-container2">
-        <Grid>
+        <Grid id='w-e-grid'>
           <Grid.Column className="about-text" width={7}>
             <h1 className="about-header">Work & Education</h1>
             <p className="about-paragraph">

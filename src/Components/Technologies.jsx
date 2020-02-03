@@ -21,19 +21,19 @@ class Technologies extends Component {
 
     if (data) {
       frameworkList = data.frameworks.map(framework => {
-        return <li>{framework}</li>
+        return <li key={framework.id}>{framework}</li>
       })
     }
 
     if (data) {
       skillList = data.softSkills.map(skill => {
-        return <li>{skill}</li>
+        return <li key={skill.id}>{skill}</li>
       })
     }
 
     if (data) {
       dependencyList = data.dependencies.map(dependency => {
-        return <li>{dependency}</li>
+        return <li key={dependency.id}>{dependency}</li>
       })
     }
 

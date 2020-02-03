@@ -6,16 +6,16 @@ const Sidebar = () => {
     <>
       <input
         type="checkbox"
-        class="openSidebarMenu"
+        className="openSidebarMenu"
         id="openSidebarMenu"
       ></input>
-      <label for="openSidebarMenu" class="sidebarIconToggle">
-        <div class="spinner diagonal part-1"></div>
-        <div class="spinner horizontal"></div>
-        <div class="spinner diagonal part-2"></div>
+      <label htmlFor="openSidebarMenu" className="sidebarIconToggle">
+        <div className="spinner diagonal part-1"></div>
+        <div className="spinner horizontal"></div>
+        <div className="spinner diagonal part-2"></div>
       </label>
       <div id="sidebarMenu">
-        <ul class="sidebarMenuInner">
+        <ul className="sidebarMenuInner">
           <NavLink to="/">
             <li>
               Jonas Masharqa <span>Front End Developer</span>
