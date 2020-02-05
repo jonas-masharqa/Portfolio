@@ -478,12 +478,8 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 
 #about-container2{
-  margin-left: 900px !important;
-  margin-top: 100px;
-}
-
-#w-e-grid{
-
+  margin-left: 40% !important;
+  margin-top: 6%;
 }
 
 #jonas-pic {
