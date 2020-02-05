@@ -40,7 +40,7 @@ const AboutMe = () => {
               keep learning, contribute, and grow.
             </p>
           </Grid.Column>
-          <Grid.Column width={7}>{electricValley}</Grid.Column>
+          <right><Grid.Column width={9}><center>{electricValley}</center></Grid.Column></right>
         </Grid>
       </Container>
     </>
