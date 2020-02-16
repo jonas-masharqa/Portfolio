@@ -29,7 +29,8 @@ const Footer = () => {
               <NavLink to={'/about'}>About Me</NavLink>
               <span> :: </span>
               <NavLink to={'/contact'}>Contact</NavLink>
-              <span> id="copyright">Copyright © 2020 Jonas Masharqa</span>
+              <br />
+              <span id="copyright">Copyright © 2020 Jonas Masharqa</span>
             </p>
           </div>
         </div>
