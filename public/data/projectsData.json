@@ -18,7 +18,7 @@
   {
     "id": 3,
     "name": "Websockets Chat",
-    "framework": "React",
+    "framework": "React & Node JS",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj7LTSFOKqTqVM4K7yowrlT4r4dl42Fh-iZj16F4Rc3AP750Dktg&s",
     "info": "Simple and short application that displays Websockets realtime usage. Built as a chat room.",
     "link": "https://wsnotifications.netlify.com/"
@@ -33,6 +33,14 @@
   },
   {
     "id": 5,
+    "name": "Lazy Load",
+    "framework": "React",
+    "image": "https://image.flaticon.com/icons/svg/594/594550.svg",
+    "info": "Simple app fetching users from third party API as well as demonstrating lazy loading built with the Intersection observer.",
+    "link": "https://lazyload.netlify.com/"
+  },
+  {
+    "id": 6,
     "name": "Midcourse Project",
     "framework": "Ruby on Rails",
     "image": "https://images.unsplash.com/photo-1568555631745-39ee7d804995?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80",
@@ -40,7 +48,7 @@
     "link": "https://github.com/CraftAcademy/not_so_trivial_recepies"
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Cooper Challenge",
     "framework": "React & Ruby on Rails",
     "image": "https://images.unsplash.com/photo-1509486432407-f8fb9cc99acd?ixlib=rb-1.2.1&auto=format&fit=crop&w=644&q=80",
@@ -48,7 +56,7 @@
     "link": "https://jonas-yasmine-cooperapp.netlify.com"
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "Adress Book Challenge",
     "framework": "JavaScript",
     "image": "https://images.unsplash.com/photo-1534298435681-3fd5153b0b7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80",
@@ -56,7 +64,7 @@
     "link": "https://geeze-squad.netlify.com"
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "ATM Challenge",
     "framework": "Ruby",
     "image": "https://images.unsplash.com/photo-1539622287262-61e066a2c534?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
